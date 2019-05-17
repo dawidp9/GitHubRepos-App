@@ -1,5 +1,27 @@
 <resources>
-    <string name="app_name">SearchGitHubRepos</string>
-    <string name="type_github_username">GitHub Username</string>
+    <string name="app_name">GitHubRepoApp</string>
+    <string name="api_error_repos">Http Exception</string>
+    <string name="created_date_label">Created date:</string>
+    <string name="updated_date_label">Updated date:</string>
+    <string name="default_branch_label">Default Branch:</string>
+    <string name="language_label">Language:</string>
+    <string name="api_error_repos_404_not_found">User Not Found :(</string>
+    <string name="api_error_repos_500_server_error">API HTTP 500 Internal Server Error</string>
+    <string name="ssh_url_label">SSH Url:</string>
+    <string name="node_id_label">Node ID:</string>
+    <string name="id_label">ID:</string>
+    <string name="stargazers_count_label">Stargazers count:</string>
+    <string name="watchers_count_label">Watchers count:</string>
+    <string name="forks_count_label">Forks count:</string>
+    <string name="url_label">Url:</string>
+    <string name="description_label">Description:</string>
+    <string name="title_alert_dialog">Opps!</string>
+    <string name="alert_dialog_username_not_found_message">Make sure username is correct.</string>
+    <string name="alert_dialog_empty_username_message">Please type GitHub profile username</string>
+    <string name="alert_dialog_empty_username_title">Empty username!</string>
+    <string name="size_label">Size:</string>
+    <string name="size_metric_label">kB</string>
+    <string name="error_repos">Sorry something go wrong. Try again later.</string>
+    <string name="type_github_username">GitHub username</string>
     <string name="button_search_text">Search</string>
 </resources>

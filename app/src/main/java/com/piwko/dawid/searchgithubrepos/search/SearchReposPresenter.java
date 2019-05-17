@@ -27,7 +27,7 @@ public class SearchReposPresenter implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        //TODO(move to next screen)
+        screenNavigator.goToUserReposList(username);
     }
 
     public void showAlertDialog(Context context, int titleResId, int messageResId){

@@ -18,10 +18,10 @@ public class SearchReposController extends BaseController {
 
     @Inject SearchReposPresenter presenter;
 
-//    @BindView(R.id.buttonSearch)
-//    Button buttonSearch;
-//    @BindView(R.id.editTextUsername)
-//    EditText editTextUsername;
+    @BindView(R.id.buttonSearch)
+    Button buttonSearch;
+    @BindView(R.id.editTextUsername)
+    EditText editTextUsername;
 
     public SearchReposController() {
 
@@ -37,18 +37,18 @@ public class SearchReposController extends BaseController {
 
     @Override
     protected void onViewBound(View view) {
-//        buttonSearch.setOnClickListener(v -> {
-//            String username = editTextUsername.getText().toString().trim();
-//            if (username.isEmpty()) {
-//                presenter.showAlertDialog(
-//                        v.getContext(),
-//                        R.string.alert_dialog_empty_username_title,
-//                        R.string.alert_dialog_empty_username_message);
-//            } else  {
-//                presenter.setUsername(username);
-//                presenter.onClick(v);
-//            }
-//        });
+        buttonSearch.setOnClickListener(v -> {
+            String username = editTextUsername.getText().toString().trim();
+            if (username.isEmpty()) {
+                presenter.showAlertDialog(
+                        v.getContext(),
+                        R.string.alert_dialog_empty_username_title,
+                        R.string.alert_dialog_empty_username_message);
+            } else  {
+                presenter.setUsername(username);
+                presenter.onClick(v);
+            }
+        });
 
         super.onViewBound(view);
     }
